@@ -1,2 +1,2 @@
-something = input("Type something here\n ")
-print(aomething.replace(" ", "..."))
+something = input("Type something here\n")
+print(something.replace(" ", "..."))

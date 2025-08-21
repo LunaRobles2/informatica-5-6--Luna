@@ -2,7 +2,7 @@ def main():
 	print('')
 	print('Please enter the following information to create your ID Card.')
 	input('Press enter to continue.')
-	bgbg
+
 	name = input("Your name: ")
 	Last_Name = input("Your Last Name: ")
 	Email_Address = input("Email Adress: ")
@@ -19,6 +19,9 @@ def main():
 	print(Last_Name.upper,name)
 	print(student)
 	print(Student_ID_Number)
+	Email_Address
+	Phone_Number
+	
 
 	CALAHORRA, Aaron
 Teacher

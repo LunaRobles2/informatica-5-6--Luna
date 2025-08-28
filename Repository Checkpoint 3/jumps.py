@@ -1,9 +1,8 @@
 def main():
 
     number = int(input("Please type in a number: "))
-    limit = number
     steps = 2
-    while steps < limit:
+    while steps < number:
 
         steps = steps + 1
 

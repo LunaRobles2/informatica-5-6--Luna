@@ -7,7 +7,7 @@ def encode_message(text):
     cipher = "zyxwvutsrqponmlkjihgfedcba"
     new_message = ""
     i = 0
-
+    
     while i < len(text):
         char = text[i]
         

@@ -1,17 +1,31 @@
 def main():
-    print ("in the order the items were added:", list)
-    print ("The ordered from smallest to greatest:", order)
+    print("The length of your list is:",(length(values())))
+    print("The mean of your list is:", (mean(values())))
+
+def values():
+    value_list = []
+    while True:
+        value = int(input("Enter a number to add to the list: "))
+        if (value !=0):
+            value_list.append(value)
+            print ("in the order the items were added:", value_list)
+            order = sorted(value_list)
+            print ("The ordered from smallest to greatest:", order)
+            
+            continue
+        else:
+            break
+    return (value_list)
+    
+
 def length(list):
     return len(list)
 
 def mean(list):
-    return mean(list)
-    
-def range_of_list(list):
-    small = min(my_list)
-    greatest = max(my_list)
-    return (greatest-small)
-    list = int(list(input("Please type in numbers to add to the list: ")))
+    return (sum(list) / len(list))
+
+def range(list):
+    print("The range of your list is:", (max(list) - main(list)))
         
 
 main()

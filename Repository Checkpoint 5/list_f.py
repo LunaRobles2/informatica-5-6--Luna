@@ -7,7 +7,7 @@ print(my_list)
 greatest = max(my_list)
 print ("The gresater number in the list is:",greatest)
 
-# small is to find the smallest number in a list
+# min is to find the smallest number in a list
 small = min(my_list)
 print("The smallest number in a list is:", small)
 

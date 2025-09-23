@@ -40,10 +40,14 @@ for row in matrix:
     print("Row")
     print(row)
 print("-" * 15)
-for column in matrix:
-    n1 = column [0]
-    n2 = column [1]
-    n3 = column [2]
+
+#for column in matrix:
+#    column = [(matrix[0][0]),(matrix[1][0]), (matrix[2][0])]
+
+#    print(column)
+colums_zip = list(zip(*matrix))
+listed_columns = [list(nested) for nested in colums_zip]
+for colums in list:
     print("Column")
-    print(column)
+    print(colums)
 print(line)

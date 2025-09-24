@@ -41,13 +41,17 @@ for row in matrix:
     print(row)
 print("-" * 15)
 
-#for column in matrix:
-#    column = [(matrix[0][0]),(matrix[1][0]), (matrix[2][0])]
+# for column in matrix:
+#     column = [(matrix[0][0]),(matrix[1][0]), (matrix[2][0])]
+#     print(column)
 
-#    print(column)
-colums_zip = list(zip(*matrix))
-listed_columns = [list(nested) for nested in colums_zip]
-for colums in list:
-    print("Column")
-    print(colums)
+
+# colums_zip = list(zip(*matrix))
+# print(colums_zip)
+# listed_columns = [list(nested) for nested in colums_zip]
+# for colums in listed_columns:
+#     print("Column")
+#     print(colums)
+
+
 print(line)

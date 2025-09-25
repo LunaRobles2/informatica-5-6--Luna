@@ -41,17 +41,9 @@ for row in matrix:
     print(row)
 print("-" * 15)
 
-# for column in matrix:
-#     column = [(matrix[0][0]),(matrix[1][0]), (matrix[2][0])]
-#     print(column)
-
-
-# colums_zip = list(zip(*matrix))
-# print(colums_zip)
-# listed_columns = [list(nested) for nested in colums_zip]
-# for colums in listed_columns:
-#     print("Column")
-#     print(colums)
+def Zip (= )
+for column in matrix:
+    armar = matrix[row]
 
 
 print(line)

@@ -41,9 +41,7 @@ for row in matrix:
     print(row)
 print("-" * 15)
 
-def Zip (= )
-for column in matrix:
-    armar = matrix[row]
+print (matrix[:,0])
 
 
 print(line)

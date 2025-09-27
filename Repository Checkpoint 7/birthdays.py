@@ -10,4 +10,8 @@ if look == "Jazmin" or "Rodrigo" or "Luisa":
     print((birthdays[look]), "is the birthday of", look)
 else:
     then_look = input("I do not have birthday information for", look, "What is their birthday?")
-    birthdays [look] = then_look
+    name = input("The name again please: ")
+    birthdays [name] = then_look
+    print (birthdays)
+
+

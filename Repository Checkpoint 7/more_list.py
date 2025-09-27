@@ -41,7 +41,14 @@ for row in matrix:
     print(row)
 print("-" * 15)
 
-print (matrix[:,0])
+
+num_cols = len(matrix[0])  # cuántas columnas hay
+
+for i in range(num_cols):
+    print("Column")
+    column = [row[i] for row in matrix]
+    print(column)
+
 
 
 print(line)

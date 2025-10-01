@@ -9,4 +9,5 @@ message = input("Write a message: ")
 dictionary = {}
 character_counter(message, dictionary)
 
-
+large_num = max(dictionary, key=dictionary.get)
+print ("The largest number is:"dictionary[large_num]"")

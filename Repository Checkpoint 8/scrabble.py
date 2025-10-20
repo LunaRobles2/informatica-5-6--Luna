@@ -15,8 +15,27 @@ alphabet = {
 }
 user_letters = []
 i = 0
-while i < 13:
+while i < 13: 
+    user_letters.append(list(alphabet.keys())[random.randint(0,25)])
     i += 1
-    num = random.choice(string.ascii_uppercase) 
-    user_letters.append(num)
 print(user_letters)
+
+word = input("Enter a word with these letters: ")
+o = 0
+while o < len(word):
+    if word.upper()[o] in user_letters:
+        print(word[o])
+        o += 1
+    else:
+        print("Wrong")
+        o += 1
+
+with open("scrabble-words.txt", "r") as file:
+    lines = file.readline()
+dicwords = []
+for line in lines:
+    dicwords.append(line.replace("\n",""))
+if word in dicwords:
+    print("it's okay")
+else: 
+    print("Not okay")

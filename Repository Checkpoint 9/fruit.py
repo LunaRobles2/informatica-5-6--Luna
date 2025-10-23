@@ -1,12 +1,19 @@
-word_list = [
-  "banana", "milk", "soda", "cheese", "sourmilk", "juice", "sausage",
-  "tomato", "cucumber", "butter", "margarine", "cheese", "sausage",
-  "soda", "sourmilk", "sourmilk", "butter", "soda", "chocolate"
-]
+def main():
+  word_list = [
+    "banana", "milk", "soda", "cheese", "sourmilk", "juice", "sausage",
+    "tomato", "cucumber", "butter", "margarine", "cheese", "sausage",
+    "soda", "sourmilk", "sourmilk", "butter", "soda", "chocolate"
+  ]
+  count(word_list)
+def count(w_list):
+    word_dictionary = {}
+    for word in w_list:
+      if word not in word_dictionary:
+        word_dictionary[word] = 0
 
-# 2. Create a function called `count` to that prints a dictionary using the words 
-# in the list as keys of the dictionary, and the number of times the word has a
-# ppeared as the value mapped to each key.
-# 3. Insert a breakpoint in the line of the first loop statement that you type.
-# 4. Run the program in a debugging session.
-# def count():
+      word_dictionary[word] += 1
+      
+    print(word_dictionary)
+    
+main()
+

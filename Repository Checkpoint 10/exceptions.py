@@ -39,3 +39,19 @@
 #         break
 
 # x = print(f"x is equal to {x}")
+
+def read_small_interger():
+    while True:
+        try:
+            input_str = ("Please type in an intergerinput: ")
+            number = int(input_str)
+            if number < 100 and number >= 0:
+                return number
+            
+        except ValueError:
+            pass
+        print("This input is invaliud")
+
+    
+number = read_small_interger()
+print(number, "to the power of three is", number**3)

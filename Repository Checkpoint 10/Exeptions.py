@@ -1,14 +1,14 @@
 def main():
-  number = read_input("Please type in a number: ", 5, 10)
-  print("You typed in:", number)
-
-def read_input(prompt, check): 
+    number = read_input("Please type in a number: ", 5, 10)
+    print("You typed in:", number)
+def read_input(prompt, small, large): # Insert missing parameters
     while True:
-        try:
-            check = int(input(prompt))
-            if check < 10 and check > 5:
-                return check
+        try: 
+            x = int(input(prompt))
+            if 5 < x < 10: 
+                return x
+            else: 
+                print("Please type a number BETWEEN", small, "and", large)
         except ValueError:
-            pass
-
+            print("Please type a NUMBER between", small, "and", large) 
 main()

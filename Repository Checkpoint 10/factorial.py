@@ -11,7 +11,7 @@ def formula(n):
         new_n = 1
         print(list(range(2, n + 1)))
         for i in range(2, n + 1):
-            new_n = new_n * 1
+            new_n = new_n * i
         return new_n
     
 main()

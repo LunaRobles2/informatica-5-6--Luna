@@ -1,6 +1,8 @@
 def main():
     print("🥛 🍉 " * 10)
-    print("Count your calories!!!")
+    print("                   Count your calories!!!")
+    print(" ")
+    print("but ⚠️  remember ⚠️  : you cannot mix watermelon 🍉 and milk 🥛")
     dic = {
     "Whole milk" : 73,
     "Soymilk" : 30,
@@ -22,15 +24,17 @@ def main():
     "Banana" : 33
     }
 
+    print("-" * 65)
     print(dic)
+    print("-" * 65)
     x = str(input("Write a food item from the list: "))
     y = str(input("Write another food item from the list: "))
     list = [x,y]
 
-    if x == "Whole milk" or x == "Soymilk" and y == "Watermellon":
+    if x=="Whole milk" and y=="Watermellon" or x=="Soymilk" and y=="Watermellon":
         print ("❌Error❌: you cannot mix watermelon 🍉 and milk 🥛")
-    elif x == "Watermellon" and y == "Whole milk" or y == "Soymilk":
-        print()
+    elif x=="Watermellon" and y=="Whole milk" or x=="Watermellon" and y=="Soymilk":
+        print("❌Error❌: you cannot mix watermelon 🍉 and milk 🥛")
     else:
         sum = 0
         for value in list:

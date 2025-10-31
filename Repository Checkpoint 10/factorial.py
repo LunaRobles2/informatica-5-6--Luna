@@ -3,6 +3,7 @@ def main():
     print("Lets play with factorial numbers!!!")
     num = int(input("Type a positive integer: "))
     print(f"{num}! = {formula(num)}")
+    print("🟥 🟨 🟦 " * 7)
 
 def formula(n):
     if n < 0 or n == 0:

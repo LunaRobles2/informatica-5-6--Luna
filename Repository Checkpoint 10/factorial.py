@@ -7,7 +7,7 @@ def main():
 
 def formula(n):
     if n < 0 or n == 0:
-        raise ValueError(f"The input was negative or zero: {n}")
+        raise ValueError(f"❌The input was negative or zero: {n}", "❌")
     else:
         new_n = 1
         print(list(range(2, n + 1)))

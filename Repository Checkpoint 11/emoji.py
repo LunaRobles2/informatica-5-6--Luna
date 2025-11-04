@@ -1,6 +1,9 @@
+import emoji
+
 def main():
-    number = emoji("Enter your text: ")
-    print("Output: ")
-def emoji(code,):
-     
+    
+    text = input("Your text: ")
+    print(emoji.emojize(text))
+
+
 main()

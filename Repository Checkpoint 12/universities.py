@@ -27,6 +27,13 @@ def main():
     }
 
 }
+    print("The universities we have information rigth now are:")
+    list=["UPN", "URN", "UACJ", "elpac", "ISAC"]
+    print(list)
+    uni= input("About what university did you want to have information: ")
+    
 
-    print(uni_list)
+    if uni in uni_list:
+        info = uni_list[uni] 
+        print(info)
 main()

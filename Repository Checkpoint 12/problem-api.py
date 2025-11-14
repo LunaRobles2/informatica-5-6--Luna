@@ -16,9 +16,9 @@ def main():
     print("💋💄",tag_list)
     tag = (input("What type of free of are you searching for? "))
     response = requests.get ("http://makeup-api.herokuapp.com/api/v1/products.json?product_type="+product+ "&tag_list=" +tag +"&brand=maybelline")
-    
+
     i=0
-    for i in len(response):
+    for i in len(response.json()):
         look = (response.json()[i]["name"])
         print(look)
         i+=1

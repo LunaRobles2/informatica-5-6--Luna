@@ -1,8 +1,8 @@
 def main():
     import requests
-    import json
+    
     print(("🧡 🩷  ")*10)
-
+    print( )
     product_list = [
     "blush", "lip_liner","lipstick","foundation","eyeliner","eyeshadow","bronzer","mascara"
 ]
@@ -17,11 +17,13 @@ def main():
     tag = (input("What type of free of are you searching for? "))
     response = requests.get ("http://makeup-api.herokuapp.com/api/v1/products.json?product_type="+product+ "&tag_list=" +tag +"&brand=maybelline")
 
+    cof = len(response.json())
     i=0
-    for i in len(response.json()):
+    while i < cof:
         look = (response.json()[i]["name"])
-        print(look)
+        print("🌸",look)
         i+=1
 
+    print( )
     print(("🧡 🩷  ")*10)
 main()
